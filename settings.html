@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">The Atlas of Invincibility</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Favicon.png" id="favicon">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <div class="navbarTop">
+            <a class="navlink navlinkTop" href="index.html">Home</a>
+            <a class="navlink navlinkTop" href="games.html ">Games</a>
+            <a class="navlink navlinkTop" href="misc.html">Utilities</a>
+            <a class="navlink navlinkTop" href="attrib.txt">Credits</a>
+    </div>
+    <div class="mainContainer">
+        <div class="headcontainer">
+            <h1 class="header">Settings</h1>
+            <!-- <p class="splashtext">placeholder</p> -->
+        </div>
+        <br>
+        <div id="titleSetContainer" class="centerFlex">
+            
+            <input type="text" id="titleSetInput">
+            <button id="titleSetButton" onclick="setTitle('titleSetInput')">Set Title</button>
+        </div>
+        <br>
+        <div id="favSetContainer" class="centerFlex">
+            
+            <input type="text" id="favSetInput">
+            <button id="favSetButton" onclick="setFav('favSetInput')">Set Favicon</button>
+        </div>
+        <br>
+        <p id="presetLabel" class="centerFlex presetLabel">Favicon/Title Presets</p>
+        <div id="presetContainer" class="centerFlex myP">
+            <button class="myButton presetButton" onclick="schoolPreset()">Schoology</button>
+            <button class="myButton presetButton" onclick="drivePreset()">Google Drive</button>
+        </div>
+        <br>
+        
+        
+ 
+    </div>
+    
+        <script src="functions.js"></script>
+        <script src="splash.js"></script>
+        <script src="script.js"></script>
+        
+</body>
+</html> 
