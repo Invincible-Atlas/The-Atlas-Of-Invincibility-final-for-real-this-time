@@ -56,7 +56,7 @@ function openGame(link){
 }
 function createJSONGame(path) {
   var returnData;
-  const cdnURL = "https://i-fixed-cody-shack.pages.dev/";
+  const cdnURL = "https://atlas-assets-cdn.pages.dev/";
   fetch(cdnURL+path)
       .then((res) => {
           if (!res.ok) {
