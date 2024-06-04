@@ -82,6 +82,6 @@ function createJSONGame(path) {
             
           )
       .catch((error) => 
-             console.error("Unable to fetch data:", error));
+              console.error("Unable to fetch data:", error));
   return(returnData);
 } 

@@ -58,7 +58,54 @@
         <script src="splash.js"></script>
         <script src="script.js"></script>
         <script>
-        console.log(createJSONGame("./config/games.json"))
+        
+        var returnData;
+        let games = []
+        const cdnURL = "https://atlas-assets-cdn.pages.dev/";
+        fetch(cdnURL+path)
+            .then((res) => {
+                if (!res.ok) {
+                    throw new Error
+                        (`HTTP error! Status: ${res.status}`);
+                }
+                return res.json();
+            })
+            .then((data) => {
+                returnData = data;
+                games = data;
+                const container = document.getElementById("mainContainer");
+                data.forEach((game) => {
+                    let gameEl = document.createElement("button");
+                    gameEl.onclick = function(evt){
+                        openGame(cdnURL+game.link);
+                    };
+                    gameEl.className = "gameButton";
+                    gameEl.innerHTML = game.title;
+                    container.appendChild(gameEl);
+                });
+            }
+                
+                )
+            .catch((error) => 
+                    console.error("Unable to fetch data:", error));
+            function searchGames(){
+                const input = document.getElementById("searchInput");
+                const filter = input.value.toUpperCase();
+                const container = document.getElementById("mainContainer");
+                container.innerHTML = "";
+                games
+                .filter((game) => game.title.toUpperCase().includes(filter))
+                .forEach((project) => {
+                    let gameEl = document.createElement("button");
+                    gameEl.onclick = function(evt){
+                        openGame(cdnURL+game.link);
+                    };
+                    gameEl.className = "gameButton";
+                    gameEl.innerHTML = game.title;
+                    container.appendChild(gameEl);
+                });
+            }
+
             
         </script>
 </body>
