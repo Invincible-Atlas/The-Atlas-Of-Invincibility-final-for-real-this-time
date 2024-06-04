@@ -218,3 +218,11 @@ body {
 .gameButton:hover{
   background-color: rgb(80, 0, 0);
 }
+#searchInput{
+  border-radius: 5px;
+  border-style: none;
+  margin-right: 10px;
+  font-size: 1.3em;
+  border-style: solid;
+  border-color: black;
+}
