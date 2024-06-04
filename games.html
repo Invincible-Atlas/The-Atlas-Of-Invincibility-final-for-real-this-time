@@ -60,10 +60,11 @@
         <script>
         createJSONGame("./config/games.json");
             function searchGames(){
+              
                 const input = document.getElementById("searchInput");
                 const filter = input.value.toUpperCase();
                 const container = document.getElementById("mainContainer");
-                container.innerHTML = "";
+                
                 games
                 .filter((game) => game.title.toUpperCase().includes(filter))
                 .forEach((project) => {
