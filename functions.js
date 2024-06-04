@@ -56,6 +56,7 @@ function openGame(link){
 }
 function createJSONGame(path) {
   var returnData;
+  let games = [];
   const cdnURL = "https://atlas-assets-cdn.pages.dev/";
   fetch(cdnURL+path)
       .then((res) => {
@@ -83,5 +84,5 @@ function createJSONGame(path) {
           )
       .catch((error) => 
               console.error("Unable to fetch data:", error));
-  return(returnData);
+  return(games);
 } 

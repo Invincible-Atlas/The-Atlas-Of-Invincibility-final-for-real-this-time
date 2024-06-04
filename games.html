@@ -58,25 +58,25 @@
         <script src="splash.js"></script>
         <script src="script.js"></script>
         <script>
-        createJSONGame("./config/games.json");
-        function searchGames(){
+        alert(createJSONGame("./config/games.json"));
+        function searchGames(games){
             const input = document.getElementById("searchInput");
             const filter = input.value.toUpperCase();
             const container = document.getElementById("mainContainer");
             const cdnURL = "https://atlas-assets-cdn.pages.dev/"
-                container.innerHTML = "";
-                games
-                .filter((game) => game.title.toUpperCase().includes(filter))
-                .forEach((project) => {
-                    let gameEl = document.createElement("button");
-                    gameEl.onclick = function(evt){
-                        openGame(cdnURL+game.link);
-                    };
-                    gameEl.className = "gameButton";
-                    gameEl.innerHTML = game.title;
-                    container.appendChild(gameEl);
-                });
-            }
+            container.innerHTML = "";
+            games
+            .filter((game) => game.title.toUpperCase().includes(filter))
+            .forEach((project) => {
+                let gameEl = document.createElement("button");
+                gameEl.onclick = function(evt){
+                    openGame(cdnURL+game.link);
+                };
+                gameEl.className = "gameButton";
+                gameEl.innerHTML = game.title;
+                container.appendChild(gameEl);
+            });
+        }
 
             
         </script>
