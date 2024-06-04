@@ -58,7 +58,8 @@
         <script src="splash.js"></script>
         <script src="script.js"></script>
         <script>
-        alert(createJSONGame("./config/games.json"));
+        let data1 = createJSONGame("./config/games.json");
+        alert(JSON.stringify( data1));
         function searchGames(games){
             const input = document.getElementById("searchInput");
             const filter = input.value.toUpperCase();
