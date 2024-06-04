@@ -64,7 +64,9 @@
                 const input = document.getElementById("searchInput");
                 const filter = input.value.toUpperCase();
                 const container = document.getElementById("mainContainer");
-                
+                const cdnURL = "https://atlas-assets-cdn.pages.dev/";
+ 
+                container.innerHTML = "";
                 games
                 .filter((game) => game.title.toUpperCase().includes(filter))
                 .forEach((project) => {
