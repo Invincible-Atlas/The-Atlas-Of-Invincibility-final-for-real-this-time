@@ -53,6 +53,12 @@ body {
     font-size: 4em;
     margin: 0px;
 }
+.header2{
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin:0px;
+  font-size: 2em;
+}
 .splashtext{
     text-align: center;
     margin-top: 0px;
