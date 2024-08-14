@@ -30,7 +30,8 @@ const splashList = [
     "Also try minecraft",
     "To be, or not to be? That is a question.",
     "Who needs good contrast anyway",
-    "On god fr fr"       
+    "On god fr fr" ,
+    "Chromebooks suck"      
 
 
 
