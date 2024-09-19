@@ -233,6 +233,13 @@ body {
   border-style: solid;
   border-color: black;
 }
+#statDiv{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  margin: 0px;
+  padding: 0px;
+}
 #abCloakCB{
   
   width: 20px;
