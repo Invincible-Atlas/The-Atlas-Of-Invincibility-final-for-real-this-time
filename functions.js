@@ -45,14 +45,20 @@ function openAB(link,fav,title){
   abWin.document.head.appendChild(titleEl);
   abWin.document.head.appendChild(favEl)
 }
+function openNonAB(link){
+    open("/nonlocal.html?game="+link);
+}
 function openLocalGame(link){
   var currentUrl = window.location.href;
   var domain = currentUrl.split("/")[0];
   openAB(domain+link,getCookie("fav"),getCookie("title"))
 }
 function openGame(link){
-  
+  if(localStorage.abCloak=="true"){
   openAB(link,getCookie("fav"),getCookie("title"))
+  }else{
+    openNonAB(link);
+  }
 }
 function createJSONGame(path) {
   var returnData;

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" style="margin: 0; padding: 0; height: 100%; overflow: hidden;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">The Atlas of Invincibility</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Favicon.png" id="favicon">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+        <script src="functions.js"></script>
+        <script src="script.js"></script>
+        <script>
+            let frame = document.createElement("iframe");
+            let desire = location.search.slice(1).split("&")[0].split("=")[1]
+            console.log(desire);
+            frame.style.width = "100%";
+            frame.style.height = "100%";
+            frame.style.border = "none";
+            frame.style.margin = "0px";
+
+            frame.src = desire;
+            document.body.appendChild(frame);
+        </script>
+</body>
+</html>

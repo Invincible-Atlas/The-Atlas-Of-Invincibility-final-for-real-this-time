@@ -39,6 +39,38 @@ function schoolPreset(){
 function drivePreset(){
     tabPreset(1);
 }
+function checkboxCheck(id,varName){
+    checkbox = document.getElementById(id);   
+    if(eval(`localStorage.${varName}`)){
+        if(eval(`localStorage.${varName}=="true"`)){
+            checkbox.checked = true;
+        }else if(eval(`localStorage.${varName}=="false"`)){
+            checkbox.checked = false;
+        }else{
+            eval(`localStorage.${varName}="true"`)
+        }           
+    }else{
+        eval(`localStorage.${varName}="true"`);
+    }
+}
+function checkboxToggle(varName){
+    // checkbox = document.getElementById(id);   
+    if(eval(`localStorage.${varName}=="true"`)){
+        // checkbox.checked = false;
+        eval(`localStorage.${varName}="false"`);
+    }else if(eval(`localStorage.${varName}=="false"`)){
+        // checkbox.checked = true;
+        eval(`localStorage.${varName}="true"`);
+    }else{
+        eval(`localStorage.${varName}="true"`);
+    }        
+}
 setTitle("");
 setFav("");
-setInterval
+let checkbox = document.getElementById("abCloakCB");  
+if(checkbox!==null){
+checkboxCheck("abCloakCB","abCloak");
+checkbox.onclick = () => {
+    checkboxToggle("abCloak");
+};
+}

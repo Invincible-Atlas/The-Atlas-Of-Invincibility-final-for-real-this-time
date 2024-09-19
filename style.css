@@ -9,6 +9,7 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed; 
+  height: 100%;
 }
 .mainContainer{
     /* border: solid black 2px; */
@@ -231,4 +232,18 @@ body {
   font-size: 1.3em;
   border-style: solid;
   border-color: black;
+}
+#abCloakCB{
+  
+  width: 20px;
+  height: 20px;
+  
+  
+} 
+#abCloakLabel{
+  font-size: 1.3em;
+  font-family: arial;
+  margin-left: 1px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
