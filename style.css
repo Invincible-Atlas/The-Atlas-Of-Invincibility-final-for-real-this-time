@@ -1,8 +1,14 @@
 /* Color pallete: */
-/* rgb(145, 0, 0)  */
-/* rgb(121, 0, 0) */
+/* black  */
+/* rgb(22, 156, 8) */
+/* rgb(16, 122, 5) */
+/* rgb(32,194,14) */
+
 @keyframes splashbob {
     50%{transform: scale(1.2);}
+}
+.glow1{
+  text-shadow: 0 0 30px rgb(32,194,14);
 }
 body {
   background-image: url("background.gif");
@@ -17,10 +23,26 @@ body {
     padding: 0px;
     height: 500px;
     border-radius: 40px;
-    background-color: rgb(145, 0, 0);
+    background-color: black;
+    opacity: 90%;
+    /* filter: blur(4px); */
+    box-shadow: 0 0 30px rgb(32,194,14);
+}
+.titleContainer{
+  /* border: solid black 2px; */
+  margin: 0px;
+  padding: 10px;
+  width: fit-content;
+  /* height: 250px; */
+  border-radius: 40px;
+  background-color: black;
+  opacity: 90%;
+  box-shadow: 0 0 30px rgb(32,194,14);
+  color: rgb(32,194,14);
 }
 .navbar{
     /* border: solid black 2px; */
+    
     margin: 0px ;
     padding: 10px;
     text-align: center;
@@ -38,13 +60,18 @@ body {
     color: black;
 }
 .navbarTop{
+    margin-top: auto;
+    box-shadow: 0 0 30px rgb(32,194,14);
+    height: 40px; ;
+    opacity: 90%;
+    max-width: fit-content;
     margin: 0px ;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     padding: 10px;
     text-align: center;
     width: auto;
     border-radius: 20px;
-    background-color: rgb(145, 0, 0) ;
+    background-color: black ;
     color: black;
 }
 .header{
@@ -53,12 +80,16 @@ body {
     margin-bottom: 0px;
     font-size: 4em;
     margin: 0px;
+    color: rgb(32,194,14);
+    text-shadow: 0 0 30px rgb(32,194,14);
 }
 .header2{
   text-align: center;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   margin:0px;
   font-size: 2em;
+  color: rgb(32,194,14);
+  text-shadow: 0 0 30px rgb(32,194,14);
 }
 .splashtext{
     text-align: center;
@@ -66,6 +97,7 @@ body {
     font-family: 'Comic Sans MS';
     font-size: 1em;
     animation: splashbob 3s infinite both linear;
+    
 }
 .refText{
     text-align: center;
@@ -73,16 +105,21 @@ body {
     font-family: 'Comic Sans MS';
     font-size: 1em;
     animation: splashbob 3s infinite both linear;
+    
 }
 .navlink{
     display: inline;
     margin-left: 0px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(32,194,14);
+    text-shadow: 0 0 30px rgb(32,194,14);
 }
 .navlinkTop{
     margin-left: 10px;
     margin-right: 10px;
     color: black;
+    color: rgb(32,194,14);
+    text-shadow: 0 0 30px rgb(32,194,14);
 }
 .navlink:hover{
     color: white;
@@ -106,10 +143,15 @@ body {
 .centerFlex{
     display: flex;
     justify-content: center;
+}
+.centerFlexY{
+  display: flex;
+  align-items: center;
 }    
 .headcontainer{
     /* border: solid black 2px; */
     padding: 0px;
+    
 }
 .titleSetContainer{
     text-align: center;
@@ -128,10 +170,11 @@ body {
   border-style: solid;
   border-color: black;
   border-radius: 5px;
-  background-color: rgb(100, 0, 0);
+  background-color: rgb(22, 156, 8);
+  
 }
 #titleSetButton:hover{
-  background-color: rgb(80, 0, 0);
+  background-color: rgb(16, 122, 5);
 }
 
 #favSetInput{
@@ -147,33 +190,40 @@ body {
   border-style: solid;
   border-color: black;
   border-radius: 5px;
-  background-color: rgb(100, 0, 0);
+  background-color: rgb(22, 156, 8);
 }
 #favSetButton:hover{
-  background-color: rgb(80, 0, 0);
+  background-color: rgb(16, 122, 5);
 }
 .myInput{
+  
   border-radius: 5px;
   border-style: none;
   margin-right: 10px;
   font-size: 1.3em;
   border-style: solid;
   border-color: black;
+  
 }
 .myButton{
   font-size: 1.3em;
   border-style: solid;
   border-color: black;
   border-radius: 5px;
-  background-color: rgb(100, 0, 0);
+  background-color: rgb(22, 156, 8);
+  /* opacity: 100%; */
+  
   
 }
 .myButton:hover{
-  background-color: rgb(80, 0, 0);
+  background-color: rgb(16, 122, 5);
+  
 }
 .myP{
   font-size: 1.3em;
   font-family: arial;
+  color: rgb(32,194,14);
+  /* text-shadow: 0 10px 30px rgb(32,194,14); */
 }
 #presetLabel{
   font-size: 1.3em;
@@ -219,11 +269,11 @@ body {
   border-style: solid;
   border-color: black;
   border-radius: 5px;
-  background-color: rgb(100, 0, 0);
+  background-color: rgb(22, 156, 8);
   margin: 0.25%;    
 }
 .gameButton:hover{
-  background-color: rgb(80, 0, 0);
+  background-color: rgb(16, 122, 5);
 }
 #searchInput{
   border-radius: 5px;
@@ -252,5 +302,7 @@ body {
   font-family: arial;
   margin-left: 1px;
   margin-top: auto;
+  color: rgb(32,194,14);
+  text-shadow: 0 0 30px rgb(32,194,14);
   margin-bottom: auto;
 }
