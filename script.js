@@ -11,7 +11,7 @@ function setTitle(id){
     }
 }
 function setFav(id){
-    // console.log(id);
+    // console.log(id); 
     
     
     
@@ -20,6 +20,9 @@ function setFav(id){
     }
     if(localStorage.fav){
         document.getElementById("favicon").href = localStorage.fav;
+    }else{
+        localStorage.fav = "fav.png"
+        document.getElementById("favicon").href = "fav.png";
     }
 }
 function getAllCookies(){
@@ -74,3 +77,4 @@ checkbox.onclick = () => {
     checkboxToggle("abCloak");
 };
 }
+ch
