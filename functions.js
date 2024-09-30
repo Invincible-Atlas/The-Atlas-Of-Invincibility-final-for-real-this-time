@@ -60,11 +60,11 @@ function openGame(link){
     openNonAB(link);
   }
 }
-function createJSONGame(path) {
+async function createJSONGame(path) {
   var returnData;
   let games = [];
   const cdnURL = "https://atlas-assets-cdn.pages.dev/";
-  fetch(cdnURL+path)
+  await fetch(cdnURL+path)
       .then((res) => {
           if (!res.ok) {
               throw new Error

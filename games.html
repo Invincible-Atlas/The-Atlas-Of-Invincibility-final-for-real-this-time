@@ -31,7 +31,7 @@
             <a class="gameLink centerFlex myP"  href="https://docs.google.com/forms/d/e/1FAIpQLScqOVT019BHEE2OeWzm8uoByIXhVGlkJCeJzE7y3nqBzYBFEw/viewform?usp=sf_link">Game Request Form</a>
         </div>
         <div class="centerFlex">
-            <input type="text" placeholder="Broken, use ctrl+f instead" id="searchInput" aria-disabled="true" onkeyup="searchGames()">
+            <input type="text" placeholder="Search..." id="searchInput" aria-disabled="true" onkeyup="searchGames()">
         </div>
         <div id="mainContainer" class="flex-container">
 
@@ -60,23 +60,29 @@
         <script src="splash.js"></script>
         <script src="script.js"></script>
         <script>
-        let data1 = createJSONGame("./config/games.json");
+        let data1;
+        (async (params) => {
+            data1 = await createJSONGame("./config/games.json");
+            // alert(data1);
+        })()
         
         function searchGames(){
+            // alert(data1);
             const input = document.getElementById("searchInput");
             const filter = input.value.toUpperCase();
             const container = document.getElementById("mainContainer");
             const cdnURL = "https://atlas-assets-cdn.pages.dev/"
             container.innerHTML = "";
-            games
-            .filter((game) => game.title.toUpperCase().includes(filter))
+            data1
+            .filter((game) => game.title.toString().toUpperCase().includes(filter))
             .forEach((project) => {
+                // alert(project);
                 let gameEl = document.createElement("button");
                 gameEl.onclick = function(evt){
-                    openGame(cdnURL+game.link);
+                    openGame(cdnURL+project.link);
                 };
                 gameEl.className = "gameButton";
-                gameEl.innerHTML = game.title;
+                gameEl.innerHTML = project.title;
                 container.appendChild(gameEl);
             });
         }
