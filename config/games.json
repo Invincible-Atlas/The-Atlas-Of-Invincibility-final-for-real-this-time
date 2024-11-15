@@ -6,12 +6,6 @@
     "": ""
   },
   {
-    "link": "projects/2048/index.html",
-    "imgSrc": "projects/2048/thumb.png",
-    "title": 2048,
-    "": ""
-  },
-  {
     "link": "projects/1v1lol/",
     "imgSrc": "projects/1v1lol/1v1lol.png",
     "title": "1v1.LOL",
@@ -21,6 +15,12 @@
     "link": "projects/1v1space/index.html",
     "imgSrc": "projects/1v1space/splash.png",
     "title": "1v1.space",
+    "": ""
+  },
+  {
+    "link": "projects/2048/index.html",
+    "imgSrc": "projects/2048/thumb.png",
+    "title": 2048,
     "": ""
   },
   {
@@ -177,12 +177,6 @@
     "link": "projects/connect3/index.html",
     "imgSrc": "projects/connect3/connect3.png",
     "title": "Connect 3",
-    "": ""
-  },
-  {
-    "link": "projects/cookie-clicker/index.html",
-    "imgSrc": "projects/cookie-clicker/cookie1.jpeg",
-    "title": "Cookie Clicker",
     "": ""
   },
   {
@@ -497,17 +491,16 @@
     "title": "Krunker",
     "": ""
   },
-
   {
     "link": "projects/learntofly/index.html",
     "imgSrc": "projects/learntofly/learntofly.png",
     "title": "Learn To Fly",
     "": ""
-  },  
+  },
   {
-    "link":"projects/learn2fly/index.html",
-    "imgSrc":"",
-    "title":"Learn To Fly 2" 
+    "link": "projects/learn2fly/index.html",
+    "imgSrc": "",
+    "title": "Learn To Fly 2"
   },
   {
     "link": "projects/mario/index.html",
@@ -573,12 +566,6 @@
     "link": "projects/motox3m-winter/index.html",
     "imgSrc": "projects/motox3m-winter/download.jpeg",
     "title": "MotoX3M Winter",
-    "": ""
-  },
-  {
-    "link": "projects/n-gon/index.html",
-    "imgSrc": "projects/n-gon/bot.png",
-    "title": "n-gon",
     "": ""
   },
   {
@@ -654,14 +641,11 @@
     "": ""
   },
   {
-    "link":"projects/redshift/index.html",
-    "imgSrc":"",
-    "title":"Redshift",
-    "":""
-
-
+    "link": "projects/redshift/index.html",
+    "imgSrc": "",
+    "title": "Redshift",
+    "": ""
   },
-
   {
     "link": "projects/retro-bowl/index.html",
     "imgSrc": "projects/retro-bowl/img/icon.jpg",
@@ -884,6 +868,18 @@
     "title": "TV Static",
     "": ""
   },
+  {
+    "link": "project\\output\\cookieclicker\\index.html",
+    "name": "Cookie Clicker"
+  },
+  { "link": "project\\output\\gravioroids\\index.html", "name": "Gravioroids" },
+  {
+    "link": "project\\output\\MonkeyMart-gh-pages\\MonkeyMart-gh-pages\\index.html",
+    "name": "Monkeymart"
+  },
+  { "link": "project\\output\\n-gon-master\\index.html", "name": "N-Gon" },
+  { "link": "project\\output\\outerorbit\\index.html", "name": "Outer Orbit" },
+  { "link": "project\\output\\polytrack\\index.html", "name": "Polytrack" },
   {
     "link": "projects/vex3/index.html",
     "imgSrc": "projects/vex3/vex3.png",
