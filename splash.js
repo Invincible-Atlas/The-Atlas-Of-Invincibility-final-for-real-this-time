@@ -31,7 +31,9 @@ const splashList = [
     "To be, or not to be? That is a question.",
     "Who needs good contrast anyway",
     "On god fr fr" ,
-    "Chromebooks suck"      
+    "Chromebooks suck",
+    "Who was visiting my site in <em>Spain</em>?",  
+    "Who was visiting my site in <em>Germany</em>?",      
 
 
 
