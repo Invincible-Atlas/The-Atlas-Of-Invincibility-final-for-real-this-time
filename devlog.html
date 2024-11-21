@@ -1,2 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">The Atlas of Invincibility</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Favicon.png" id="favicon">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <div class="centerFlex">
+      <nav class="actualNav">
+        <div class="navbarTop withBorder centerFlexY">
+            
+        </div>
+        <script src="navbar.js"></script>
+        <p class="centerFlex" style="margin-top: 0px;">▼</p>
+      </nav>
+    </div>
+    <!-- <div class="navbarTop centerFlexY">
+            <a class="navlink navlinkTop" href="index.html">Home<a>
+            <a class="navlink navlinkTop" href="settings.html">Settings<a>
+    </div> -->
+    <div class="mainContainer longMain" >
+        <h1 class="header centerFlex">Devlog</h1>
+        <h2 class="header2 centerflex">To-Do</h2>
+        <div id="todoOutput"></div>
+        <h2 class="header2 centerFlex">Updates</h2>
+        <div id="commitOutput">
+        </div>
+        <br>
+        <br>
+        <script src="functions.js"></script>
+        <script src="splash.js"></script>
+        <script src="script.js"></script>
+        <script>
+            const commitOutput = document.getElementById("commitOutput");
+            const todoOutput = document.getElementById("todoOutput");
+            fetch(
+            "https://api.github.com/repos/Invincible-Atlas/the-Atlas-of-Invincibility-final-for-real-this-time/commits",
+            )
+            .then((res) => res.json())
+            .then((json) => {
+                json
+                .map((value, index, array) => {
+                    return `${value.commit.committer.date.replaceAll("-", "/").replace("T", " ").replace("Z", "")} - ${value.commit.message}`
+                })
+                .forEach((value, index, array) => {
+                    let commitEl = document.createElement("div")
+                    commitEl.classList = "commitDiv"
+                    let linesArray = value.split("\n")
+                    let commitTitleEl = document.createElement("h2")
+                    commitTitleEl.classList = "commitTitle"
+                    commitTitleEl.innerHTML = linesArray[0]
+                    commitEl.appendChild(commitTitleEl)
+                    linesArray.splice(0, 1)
+                    linesArray.forEach((lineValue, lineIndex, lineArray) => {
+                    let commitBodyEl = document.createElement("p")
+                    commitBodyEl.classList = "commitP"
+                    commitBodyEl.innerHTML = lineValue
+                    commitEl.appendChild(commitBodyEl)
+                    })
+                    
+                    commitOutput.appendChild(commitEl)
+                })
+            })
+            fetch(
+            "todo.txt",
+            )
+            .then((res) => res.text())
+            .then((text) => {
+                let todoEl = document.createElement("p");
+                todoEl.classList = "todoP centerFlex";
+                todoEl.innerHTML = text.replaceAll("\n","<br>");
+                todoOutput.appendChild(todoEl);
+            })
 
-
+        </script>
+        <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d7afb9fbbd6d49d7a25be02d5fd28952"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
