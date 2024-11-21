@@ -12,11 +12,12 @@
     "link":"settings.html"
   },
   {
-    "name":"Misc",
-    "link":"misc.html"
-  },
-  {
     "name":"Devlog",
     "link":"devlog.html"
+  },
+  {
+    "name":"Misc",
+    "link":"misc.html"
   }
+
 ]
