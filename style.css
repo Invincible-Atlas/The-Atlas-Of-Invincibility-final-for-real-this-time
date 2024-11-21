@@ -306,3 +306,14 @@ body {
   text-shadow: 0 0 30px rgb(32,194,14);
   margin-bottom: auto;
 }
+.commitDiv{
+  color:rgb(32,194,14);
+  font-family: arial;
+  margin: 20px;
+}
+.todoP{
+  color:rgb(32,194,14);
+  font-size: 1.5em;
+  font-family: arial;
+
+}
