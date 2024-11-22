@@ -1,0 +1,23 @@
+[
+  {
+    "name":"Home",
+    "link":"index.html"
+  },
+  {
+    "name":"Games",
+    "link":"games.html"
+  },
+  {
+    "name":"Settings",
+    "link":"settings.html"
+  },
+  {
+    "name":"Devlog",
+    "link":"devlog.html"
+  },
+  {
+    "name":"Misc",
+    "link":"misc.html"
+  }
+
+]

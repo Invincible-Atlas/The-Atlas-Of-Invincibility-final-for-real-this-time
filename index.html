@@ -11,11 +11,9 @@
 <body>
     <div class="centerFlex " style="margin-bottom: 10px;">
         <div class="navbarTop centerFlexY">
-            <a class="navlink navlinkTop" href="games.html">Games<a>
-            <a class="navlink navlinkTop" href="settings.html">Settings<a>
-            <a class="navlink navlinkTop" href="misc.html">Misc</a>
-            <a class="navlink navlinkTop" href="attrib.txt">Credits</a>
+
         </div>
+        <script src="navbar.js"></script>
     </div>
     <br>
     <br>
@@ -50,9 +48,16 @@
         if(window.location.href=="https://theatlas.pages.dev"||window.location.href=="https://theatlas.pages.dev/"){
             alert("the new link is https://ta2electricboogaloo.pages.dev")
         }
+        if(window.sessionStorage.seenDesignPoll=="true"){
+
+        }else{
+            alert("What do you think of our desing? Let us know here! https://strawpoll.com/QrgewLDdLyp");
+            window.sessionStorage.seenDesignPoll = "true";
+        }
     </script>
     <script src="functions.js"></script>
     <script src="splash.js"></script>
     <script src="script.js"></script>
+    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d7afb9fbbd6d49d7a25be02d5fd28952"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
