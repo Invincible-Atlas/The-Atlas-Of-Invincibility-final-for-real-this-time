@@ -180,6 +180,10 @@
     "": ""
   },
   {
+    "link": "project\\output\\cookieclicker\\index.html",
+    "title": "Cookie Clicker"
+  },
+  {
     "link": "projects/craftmine/index.html",
     "imgSrc": "projects/craftmine/images/craftmine.png",
     "title": "CraftMine",
@@ -274,6 +278,10 @@
     "imgSrc": "projects/draw-the-hill/icons/icon-512.png",
     "title": "Draw the Hill",
     "": ""
+  },
+  {
+    "link": "project\\output\\Drive Mad Parent\\Drive Mad\\index.html",
+    "title": "Drive Mad"
   },
   {
     "link": "projects/ducklife1/index.html",
@@ -406,6 +414,10 @@
     "imgSrc": "projects/google-snake/img/snake.png",
     "title": "Google Snake",
     "": ""
+  },
+  {
+    "link": "project\\output\\gravioroids\\index.html",
+    "title": "Gravioroids"
   },
   {
     "link": "projects/grindcraft/index.html",
@@ -545,6 +557,10 @@
     "": ""
   },
   {
+    "link": "project\\output\\MonkeyMart-gh-pages\\index.html",
+    "title": "Monkeymart"
+  },
+  {
     "link": "projects/motox3m/index.html",
     "imgSrc": "projects/motox3m/splash.jpg",
     "title": "MotoX3M",
@@ -568,6 +584,7 @@
     "title": "MotoX3M Winter",
     "": ""
   },
+  { "link": "project\\output\\n-gon-master\\index.html", "title": "N-Gon" },
   {
     "link": "projects/ns-shaft/index.html",
     "imgSrc": "projects/ns-shaft/favicon.png",
@@ -580,6 +597,7 @@
     "title": "Om Nom Bounce",
     "": ""
   },
+  { "link": "project\\output\\outerorbit\\index.html", "title": "Outer Orbit" },
   {
     "link": "projects/pandemic2/index.html",
     "imgSrc": "projects/pandemic2/pandemic2.png",
@@ -616,6 +634,7 @@
     "title": "PolyBranch",
     "": ""
   },
+  { "link": "project\\output\\polytrack\\index.html", "title": "Polytrack" },
   {
     "link": "projects/portalflash/index.html",
     "imgSrc": "projects/portalflash/portaltheflashversion.jpg",
@@ -868,18 +887,6 @@
     "title": "TV Static",
     "": ""
   },
-  {
-    "link": "project\\output\\cookieclicker\\index.html",
-    "name": "Cookie Clicker"
-  },
-  { "link": "project\\output\\gravioroids\\index.html", "name": "Gravioroids" },
-  {
-    "link": "project\\output\\MonkeyMart-gh-pages\\MonkeyMart-gh-pages\\index.html",
-    "name": "Monkeymart"
-  },
-  { "link": "project\\output\\n-gon-master\\index.html", "name": "N-Gon" },
-  { "link": "project\\output\\outerorbit\\index.html", "name": "Outer Orbit" },
-  { "link": "project\\output\\polytrack\\index.html", "name": "Polytrack" },
   {
     "link": "projects/vex3/index.html",
     "imgSrc": "projects/vex3/vex3.png",
